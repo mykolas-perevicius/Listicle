@@ -1,0 +1,192 @@
+/* Root Styles CSS */
+:root {
+  background-color: #1c1c1c;
+  font-family: Avenir, Helvetica, sans-serif;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+/* Global Styles (applied to both pages) */
+body {
+  margin: 0;
+}
+
+/* Header CSS (applied to both pages) */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  background-color: #333;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  height: 80px;
+  margin-right: 15px;
+}
+
+.header-left h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.header-right button {
+  background-color: #333;
+  border: solid 3px #fff;
+  border-radius: 16px;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header-right button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Homepage Styles */
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card styles for homepage */
+.card {
+  width: 300px;
+  height: 400px;
+  background: #333;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #fff;
+  border-radius: 0.3rem;
+  box-shadow: 12px 12px 2px 1px rgba(255, 255, 255, 0.1);
+  margin: 20px;
+  color: #ddd;
+}
+
+.card img {
+  height: 100%;
+}
+
+.top-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+}
+
+.bottom-container {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.bottom-container h3 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.bottom-container p {
+  margin: 2px;
+  color: #ddd;
+}
+
+.bottom-container a {
+  color: #e41085;
+  text-decoration: none;
+}
+
+/* Gift Detail Page Styles */
+.gift-details-page main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #ddd;
+}
+
+/* Image container */
+.gift-details-page .image-container {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.gift-details-page .image-container img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Gift details */
+.gift-details-page .gift-details {
+  text-align: left;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gift-details-page .gift-details h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.gift-details-page .gift-details p {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #bbb;
+}
+
+.gift-details-page .gift-details p strong {
+  color: #fff;
+}
+
+.gift-details-page footer {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #333;
+  color: #ddd;
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: #e41085;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+
+/* Footer and link styling (applied to both pages) */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #ddd;
+}
+
+a {
+  color: #e41085;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
