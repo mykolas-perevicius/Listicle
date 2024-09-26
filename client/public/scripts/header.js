@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     headerLogo.alt = 'Unearthed Logo';
   
     const headerTitle = document.createElement('h1');
-    headerTitle.textContent = 'UnEarthed';
+    headerTitle.textContent = 'Tech Innovations 2024';
   
     headerLeft.appendChild(headerLogo);
     headerLeft.appendChild(headerTitle);
