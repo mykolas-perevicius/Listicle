@@ -31,6 +31,7 @@ The following **optional** features are implemented:
 Here's a walkthrough of implemented required features:
 
 <img src=https://imgur.com/a/VtjeKJR title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![](web103-project-1-walkthrough-mykolas-perevicius.gif)
 
 
 ## Notes
