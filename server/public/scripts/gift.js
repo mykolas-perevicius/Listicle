@@ -1,43 +1,43 @@
-const renderGift = async () => {
+const renderitem = async () => {
     // Parse the ID from the URL
     const urlParams = new URLSearchParams(window.location.search);
     const requestedID = parseInt(urlParams.get('id'));
   
-    // Fetch the gift data from the /gifts endpoint
-    const response = await fetch('/gifts');
+    // Fetch the item data from the /items endpoint
+    const response = await fetch('/items');
     const data = await response.json();
   
-    // Get the gift-content element
-    const giftContent = document.getElementById('gift-content');
+    // Get the item-content element
+    const itemContent = document.getElementById('item-content');
   
-    // Declare a variable for the gift
-    let gift;
+    // Declare a variable for the item
+    let item;
   
-    // Check if data exists and find the matching gift by ID
+    // Check if data exists and find the matching item by ID
     if (data) {
-      gift = data.find(gift => gift.id === requestedID);
+      item = data.find(item => item.id === requestedID);
     }
   
-    // Conditionally render the gift data or show "No Gifts Available" message
-    if (gift) {
-      document.getElementById('image').src = gift.image;
-      document.getElementById('name').textContent = gift.name;
-      document.getElementById('submittedBy').textContent = 'Submitted by: ' + gift.submittedBy;
-      document.getElementById('submittedOn').textContent = 'Submitted on: ' + new Date(gift.submittedOn).toLocaleDateString();
-      document.getElementById('pricePoint').textContent = 'Price: ' + gift.pricePoint;
-      document.getElementById('audience').textContent = 'Great For: ' + gift.audience;
-      document.getElementById('description').textContent = gift.description;
+    // Conditionally render the item data or show "No items Available" message
+    if (item) {
+      document.getElementById('image').src = item.image;
+      document.getElementById('name').textContent = item.name;
+      document.getElementById('submittedBy').textContent = 'Submitted by: ' + item.submittedBy;
+      document.getElementById('submittedOn').textContent = 'Submitted on: ' + new Date(item.submittedOn).toLocaleDateString();
+      document.getElementById('pricePoint').textContent = 'Price: ' + item.pricePoint;
+      document.getElementById('audience').textContent = 'Great For: ' + item.audience;
+      document.getElementById('description').textContent = item.description;
   
-      // Set the page title to the gift's name
-      document.title = `UnEarthed - ${gift.name}`;
+      // Set the page title to the item's name
+      document.title = `UnEarthed - ${item.name}`;
     } else {
-      // If no gift found, display a message
+      // If no item found, display a message
       const message = document.createElement('h2');
-      message.textContent = 'No Gifts Available 😞';
-      giftContent.appendChild(message);
+      message.textContent = 'No items Available 😞';
+      itemContent.appendChild(message);
     }
   };
   
-  // Call the renderGift function
-  renderGift();
+  // Call the renderitem function
+  renderitem();
   

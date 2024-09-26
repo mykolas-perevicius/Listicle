@@ -18,16 +18,12 @@ const renderitems = async () => {
         bottomContainer.classList.add('bottom-container');
   
         const name = document.createElement('h3');
-        name.textContent = item.name;
+        name.textContent = item.title;
         bottomContainer.appendChild(name);
   
-        const pricePoint = document.createElement('p');
-        pricePoint.textContent = 'Price: ' + item.pricePoint;
-        bottomContainer.appendChild(pricePoint);
-  
-        const audience = document.createElement('p');
-        audience.textContent = 'Great For: ' + item.audience;
-        bottomContainer.appendChild(audience);
+        const category = document.createElement('p');
+        category.textContent = 'Category: ' + item.category; // Use category instead of pricePoint or audience
+        bottomContainer.appendChild(category);
   
         const link = document.createElement('a');
         link.textContent = 'Read More >';
